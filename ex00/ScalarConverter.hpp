@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: to <to@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 19:39:41 by to                #+#    #+#             */
-/*   Updated: 2024/08/19 20:03:12 by to               ###   ########.fr       */
+/*   Updated: 2024/10/01 18:15:05 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,12 @@
 
 class ScalarConverter
 {
-	public:
+	private:
 		ScalarConverter();
 		ScalarConverter(ScalarConverter &s);
 		~ScalarConverter();
 		ScalarConverter	&operator=(ScalarConverter const &s);
+	public:
 		static void	convert(std::string num);
 };
 

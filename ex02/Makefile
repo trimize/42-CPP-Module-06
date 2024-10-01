@@ -1,4 +1,4 @@
-NAME = serialization
+NAME = dynamic_cast
 SRCSDIR = ./
 OBJDIR = ./objs/
 

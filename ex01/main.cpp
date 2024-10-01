@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: to <to@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 17:25:22 by to                #+#    #+#             */
-/*   Updated: 2024/09/09 17:32:50 by to               ###   ########.fr       */
+/*   Updated: 2024/09/28 17:02:24 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,6 @@ int	main()
 	d = Serializer::deserialize(raw);
 
 	std::cout << "This should be equal to the first value : " << d << std::endl << std::endl;
+
+	delete d;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.cpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: to <to@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 18:59:37 by to                #+#    #+#             */
-/*   Updated: 2024/08/19 20:23:24 by to               ###   ########.fr       */
+/*   Updated: 2024/09/28 16:57:51 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,6 @@ void	ScalarConverter::convert(std::string num)
 	float	fnum;
 	std::stringstream snum;
 
-	//convert to char
-
 	snum << num;
 	snum >> ldnum;
 	if (num.empty())
@@ -55,6 +53,8 @@ void	ScalarConverter::convert(std::string num)
 	}
 	else
 	{
+		//convert to char
+
 		if (((ldnum == 0 && num.compare("0") == 0)) || (0 < ldnum && ldnum <= 32) || (ldnum == 127) || (ldnum < 0))
 			std::cout<< "char : Non displayable" << std::endl;
 		else if ((ldnum > 127) || (!num.empty() && ldnum == 0 && num.compare("0") != 0))
